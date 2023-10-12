@@ -1,0 +1,632 @@
+/* ?This is where reusable styling of this template will be. 
+   !Will contain things like:
+   * Button styling
+   * Background color styling
+   * padding and margin
+*/
+
+.container {
+  max-width: var(--width-medium);
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+h1::selection,
+h2::selection {
+  color: #111;
+  background: var(--primary-color);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.9rem;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: 0.82rem;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: #000000;
+}
+
+.btn-secondary {
+  margin: 5px 0;
+  background-color: var(--bg-secondary);
+  color: var(--bg-primary);
+}
+
+/* add hover to resume button */
+.btn-primary:hover {
+  background: var(--secondary-color);
+}
+
+/* Dark mode toggle */
+#switch {
+  display: none;
+}
+
+.toggle-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toggle-icons > img {
+  transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  width: 30px;
+}
+
+.moon {
+  transform: rotate(10deg);
+}
+
+#switch:checked + .toggle-icons .moon {
+  transform: rotate(250deg);
+}
+
+#switch:checked + .toggle-icons .sun {
+  transform: rotate(100deg);
+}
+
+/* Header Container */
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8rem;
+  padding: 1rem;
+}
+
+.header-container > div {
+  margin-top: 1rem;
+}
+
+.content-text {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.content-text h2 {
+  font-size: 3rem;
+  line-height: 1.2;
+  transition: 0.2s ease-in-out;
+}
+
+.content-text p {
+  padding: 0.5rem;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+/* Project cards */
+.card {
+  padding: 1rem;
+  background: var(--card-background);
+  color: #ffffff;
+  border-radius: 5px;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.card a {
+  color: #ffffff;
+  transition: 0.25s ease-in-out;
+  font-size: 1.1rem;
+  margin-right: 0.3rem;
+}
+
+.card a:hover {
+  color: var(--primary-color);
+}
+
+.card:hover {
+  box-shadow: inset 0 100px 1000px 10px rgba(0, 0, 0, 0.8);
+}
+
+.card:hover .project-info {
+  opacity: 1;
+}
+
+/* Project Images */
+
+/* project 1 */
+.card:nth-child(1) {
+  background: url(../assets/project/project-one.png) center center/cover;
+}
+
+/* Project 2 */
+.card:nth-child(2) {
+  background: url(../assets/project/project-two.png) center center/cover;
+}
+
+/* Project 3 */
+.card:nth-child(3) {
+  background: url(../assets/project/project-three.png) center center/cover;
+}
+
+/* Project 4 */
+.card:nth-child(4) {
+  background: url(../assets/project/project-four.png) center center/cover;
+}
+
+/* Project 5 */
+.card:nth-child(5) {
+  background: url(../assets/project/project-five.png) center center/cover;
+}
+
+/* Project 6 */
+.card:nth-child(6) {
+  background: url(../assets/project/project-six.png) center center/cover;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .header-container {
+    margin-top: 7rem;
+    text-align: center;
+  }
+
+  .content-text h2 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Project 3D modeling */
+.section-baru1 {
+  padding: 1rem;
+  background: var(--card-background);
+  color: #ffffff;
+  border-radius: 5px;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.section-baru1 a {
+  color: #ffffff;
+  transition: 0.25s ease-in-out;
+  font-size: 1.1rem;
+  margin-right: 0.3rem;
+}
+
+.section-baru1 a:hover {
+  color: var(--primary-color);
+}
+
+.section-baru1:hover {
+  box-shadow: inset 0 100px 1000px 10px rgba(0, 0, 0, 0.8);
+}
+
+.section-baru1:hover .sectionbaru3d-info {
+  opacity: 1;
+}
+/* Project 3D modeling */
+.section-baru2 {
+  padding: 1rem;
+  background: var(--card-background);
+  color: #ffffff;
+  border-radius: 5px;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.section-baru2 a {
+  color: #ffffff;
+  transition: 0.25s ease-in-out;
+  font-size: 1.1rem;
+  margin-right: 0.3rem;
+}
+
+.section-baru2:hover  {
+  color: var(--primary-color);
+}
+
+.section-baru2:hover {
+  box-shadow: inset 0 100px 1000px 10px rgba(0, 0, 0, 0.8);
+}
+
+.section-baru2:hover .sectionbaru3d-info {
+  opacity: 1;
+}
+
+.section-baru3 {
+  padding: 1rem;
+  background: var(--card-background);
+  color: #ffffff;
+  border-radius: 5px;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.section-baru3 a {
+  color: #ffffff;
+  transition: 0.25s ease-in-out;
+  font-size: 1.1rem;
+  margin-right: 0.3rem;
+}
+
+.section-baru3:hover  {
+  color: var(--primary-color);
+}
+
+.section-baru3:hover {
+  box-shadow: inset 0 100px 1000px 10px rgba(0, 0, 0, 0.8);
+}
+
+.section-baru3:hover .sectionbaru3d-info {
+  opacity: 1;
+}
+
+.section-baru4 {
+  padding: 1rem;
+  background: var(--card-background);
+  color: #ffffff;
+  border-radius: 5px;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.section-baru4 a {
+  color: #ffffff;
+  transition: 0.25s ease-in-out;
+  font-size: 1.1rem;
+  margin-right: 0.3rem;
+}
+
+.section-baru4:hover  {
+  color: var(--primary-color);
+}
+
+.section-baru4:hover {
+  box-shadow: inset 0 100px 1000px 10px rgba(0, 0, 0, 0.8);
+}
+
+.section-baru4:hover .sectionbaru3d-info {
+  opacity: 1;
+}
+
+.section-baru4 {
+  padding: 1rem;
+  background: var(--card-background);
+  color: #ffffff;
+  border-radius: 5px;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.section-baru5 a {
+  color: #ffffff;
+  transition: 0.25s ease-in-out;
+  font-size: 1.1rem;
+  margin-right: 0.3rem;
+}
+
+.section-baru5:hover  {
+  color: var(--primary-color);
+}
+
+.section-baru5:hover {
+  box-shadow: inset 0 100px 1000px 10px rgba(0, 0, 0, 0.8);
+}
+
+.section-baru5:hover .sectionbaru3d-info {
+  opacity: 1;
+}
+
+.section-baru6 {
+  padding: 1rem;
+  background: var(--card-background);
+  color: #ffffff;
+  border-radius: 5px;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.section-baru6 a {
+  color: #ffffff;
+  transition: 0.25s ease-in-out;
+  font-size: 1.1rem;
+  margin-right: 0.3rem;
+}
+
+.section-baru6:hover  {
+  color: var(--primary-color);
+}
+
+.section-baru6:hover {
+  box-shadow: inset 0 100px 1000px 10px rgba(0, 0, 0, 0.8);
+}
+
+.section-baru6:hover .sectionbaru3d-info {
+  opacity: 1;
+}
+
+
+/* Project Image 3D */
+
+/* project 1 */
+.section-baru1 {
+  background: url(../assets/project/1.png) center center/cover;
+}
+
+/* Project 2 */
+.section-baru2 {
+  background: url(../assets/project/2.png) center center/cover;
+}
+
+/* Project 3 */
+.section-baru3 {
+  background: url(../assets/project/3.png) center center/cover;
+}
+
+/* Project 4 */
+.section-baru4 {
+  background: url(../assets/project/4.png) center center/cover;
+}
+
+/* Project 5 */
+.section-baru5 {
+  background: url(../assets/project/5.png) center center/cover;
+}
+
+/* Project 6 */
+.section-baru6 {
+  background: url(../assets/project/6.png) center center/cover;
+}
+
+
+
+
+/* Project Packaging */
+
+/* project 1 */
+.packaging1 {
+  background: url(../assets/project/11.png) center center/cover;
+}
+
+/* Project 2 */
+.packaging2 {
+  background: url(../assets/project/22.png) center center/cover;
+}
+
+/* Project 3 */
+.packaging3 {
+  background: url(../assets/project/33.png) center center/cover;
+}
+
+/* Project 4 */
+.packaging4 {
+  background: url(../assets/project/44.png) center center/cover;
+}
+
+/* Project 5 */
+.packaging5 {
+  background: url(../assets/project/55.png) center center/cover;
+}
+
+/* Project 6 */
+.packaging6 {
+  background: url(../assets/project/66.png) center center/cover;
+}
+
+.packaging1 a, .packaging2 a, .packaging3 a, .packaging4 a, .packaging5 a, .packaging6 a {
+  color: #ffffff;
+  transition: 0.25s ease-in-out;
+  font-size: 1.1rem;
+  margin-right: 0.3rem;
+}
+
+.packaging1:hover, .packaging2:hover, .packaging3:hover, .packaging4:hover, .packaging5:hover, .packaging6:hover {
+  color: var(--primary-color);
+  box-shadow: inset 0 100px 1000px 10px rgba(0, 0, 0, 0.8);
+}
+
+.packaging1:hover .packaging-info,
+.packaging2:hover .packaging-info,
+.packaging3:hover .packaging-info,
+.packaging4:hover .packaging-info,
+.packaging5:hover .packaging-info,
+.packaging6:hover .packaging-info {
+  opacity: 1;
+}
+
+
+.packaging1 a, .packaging2 a, .packaging3 a, .packaging4 a, .packaging5 a {
+  color: #ffffff;
+  transition: 0.25s ease-in-out;
+  font-size: 1.1rem;
+  margin-right: 0.3rem;
+}
+
+.packaging1:hover, .packaging2:hover, .packaging3:hover, .packaging4:hover, .packaging5:hover {
+  color: var(--primary-color);
+  box-shadow: inset 0 100px 1000px 10px rgba(0, 0, 0, 0.8);
+}
+
+.packaging1:hover .packaging-info,
+.packaging2:hover .packaging-info,
+.packaging3:hover .packaging-info,
+.packaging4:hover .packaging-info,
+.packaging5:hover .packaging-info,
+.packaging6:hover .packaging-info  {
+  opacity: 1;
+}
+
+
+
+/* Project Landing Page */
+
+/* project 1 */
+.lp1 {
+  background: url(../assets/project/lp1.PNG) center center/cover;
+}
+
+/* Project 2 */
+.lp2 {
+  background: url(../assets/project/lp2.PNG) center center/cover;
+}
+
+/* Project 3 */
+.lp3 {
+  background: url(../assets/project/lp3.PNG) center center/cover;
+}
+
+/* Project 4 */
+.lp4 {
+  background: url(../assets/project/lp4.PNG) center center/cover;
+}
+
+/* Project 5 */
+.lp5 {
+  background: url(../assets/project/lp5.PNG) center center/cover;
+}
+
+/* Project 6 */
+.lp6 {
+  background: url(../assets/project/lp6.PNG) center center/cover;
+}
+
+.lp1 a, .lp2 a, .lp3 a, .lp4 a, .lp5 a, .lp6 a {
+  color: #ffffff;
+  transition: 0.25s ease-in-out;
+  font-size: 1.1rem;
+  margin-right: 0.3rem;
+}
+
+.lp1:hover, .lp2:hover, .lp3:hover, .lp4:hover, .lp5:hover, .lp6:hover {
+  color: var(--primary-color);
+  box-shadow: inset 0 100px 1000px 10px rgba(0, 0, 0, 0.8);
+}
+
+.lp1:hover .lp-info,
+.lp2:hover .lp-info,
+.lp3:hover .lp-info,
+.p4:hover .lpg-info,
+.lp5:hover .lp-info,
+.lp6:hover .lp-info {
+  opacity: 1;
+}
+
+
+.lp1 a, .lp2 a, .lp3 a, .lp4 a, .lp5 a, .lp6 a {
+  color: #ffffff;
+  transition: 0.25s ease-in-out;
+  font-size: 1.1rem;
+  margin-right: 0.3rem;
+}
+
+.lp1:hover,
+.lp2:hover,
+.lp3:hover,
+.lp4:hover,
+.lp5:hover,
+.lp6:hover {
+  color: var(--primary-color);
+  box-shadow: inset 0 100px 1000px 10px rgba(0, 0, 0, 0.8);
+}
+
+.lp1:hover .lp-info,
+.lp2:hover .lp-info,
+.lp3:hover .lp-info,
+.lp4:hover .lp-info,
+.lp5:hover .lp-info,
+.lp6:hover .lp-info {
+  opacity: 1;
+}
+
+/* Project Website */
+
+/* project 1 */
+.wb1 {
+  background: url(../assets/project/wb1.PNG) center center/cover;
+}
+
+/* Project 2 */
+.wb2 {
+  background: url(../assets/project/wb2.PNG) center center/cover;
+}
+
+/* Project 3 */
+.wb3 {
+  background: url(../assets/project/wb3.PNG) center center/cover;
+}
+
+/* Project 4 */
+.wb4 {
+  background: url(../assets/project/wb4.PNG) center center/cover;
+}
+
+/* Project 5 */
+.wb5 {
+  background: url(../assets/project/wb5.PNG) center center/cover;
+}
+
+/* Project 6 */
+.wb6 {
+  background: url(../assets/project/wb6.PNG) center center/cover;
+}
+
+.wb1 a, .wb2 a, .wb3 a, .wb4 a, .wb5 a, .wb6 a {
+  color: #ffffff;
+  transition: 0.25s ease-in-out;
+  font-size: 1.1rem;
+  margin-right: 0.3rem;
+}
+
+.wb1:hover, .wb2:hover, .wb3:hover, .wb4:hover, .wb5:hover, .wb6:hover {
+  color: var(--primary-color);
+  box-shadow: inset 0 100px 1000px 10px rgba(0, 0, 0, 0.8);
+}
+
+.wb1:hover .wb-info,
+.wb2:hover .wb-info,
+.wb3:hover .wb-info,
+.wb4:hover .wbg-info,
+.wb5:hover .wb-info,
+.wb6:hover .wb-info {
+  opacity: 1;
+}
+
+
+.wb1 a, .wb2 a, .wb3 a, .wb4 a, .wb5 a, .wb6 a {
+  color: #ffffff;
+  transition: 0.25s ease-in-out;
+  font-size: 1.1rem;
+  margin-right: 0.3rem;
+}
+
+.wb1:hover,
+.wb2:hover,
+.wb3:hover,
+.wb4:hover,
+.wb5:hover,
+.wb6:hover {
+  color: var(--primary-color);
+  box-shadow: inset 0 100px 1000px 10px rgba(0, 0, 0, 0.8);
+}
+
+.wb1:hover .wb-info,
+.wb2:hover .wb-info,
+.wb3:hover .wb-info,
+.wb4:hover .wb-info,
+.wb5:hover .wb-info,
+.wb6:hover .wb-info {
+  opacity: 1;
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .header-container {
+    margin-top: 7rem;
+    text-align: center;
+  }
+
+  .content-text h2 {
+    font-size: 2.5rem;
+  }
+}
